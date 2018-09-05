@@ -8,8 +8,6 @@ bot.on('ready', () => {
     console.log("bot ready ! ");
 });
 
-bot.login(process.env.TOKEN);
-
 bot.on('message', message => {
     if (message.content === "ping"){
         message.reply("pong");
@@ -27,34 +25,6 @@ bot.on('message', message => {
          console.log("Connande help demandée !");
     }
 
-    if (message.content === "comment sa tu akeno?"){
-        random();
-
-        if (randnum == 3){
-            console-log(randnum);
-        }
-    
-        if (randnum == 1){
-            message.reply("rias a voler mai nouveau sous vetement");
-            console.log(randnum);
-        }
-
-        if (randnum == 4){
-            message.reply("hella hella hella issey ma fais un bisou");
-            console.log(randnum);
-        }
-
-        if (randnum == 2){
-            message.reply("issey me boude -_-");
-            console.log(randnum);
-        }
-
-    }    
-
 });
 
-function random(min, max) {
-    min = Math.ceil(0);
-    max = Math.floor(4);
-    randnum = Math.floor(Math.random() * (max - min +1) + min);
-}
+bot.login(process.env.TOKEN);
