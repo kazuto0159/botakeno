@@ -29,6 +29,7 @@ bot.on('message', message => {
         random();
 
         if (randnum == 3){
+            message.reply("je t aime");
             console-log(randnum);
         }
     
