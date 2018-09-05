@@ -57,4 +57,4 @@ function random(min, max) {
     randnum = Math.floor(Math.random() * (max - min +1) + min);
 };
 
-bot.login('NDg2MzI0MzkyODcyMTE2MjU0.DnEA4Q.zSVGZie6pk_CrL5qQ9r4FHQWSH0')
+bot.login(process.env.TOKEN);
