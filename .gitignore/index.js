@@ -27,12 +27,12 @@ bot.on('message', message => {
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
             .setColor('#06D597')
-            .addField("commandes du bot !", "**kazuto")
+            .addField("**kazuto", "insta kazuto")
             .setFooter("C'est tout pour le moment !")
-            .addField("commmandes du bot * !", "**matou")
-            .addField("commandes du bot !", "**soom")
-            .addField("commandes du bot !", "**help")
-            .addField("commandes du bot !", "**faction")
+            .addField("**matou* !", "insta matias ")
+            .addField("**soom", "pack de texture de la faction")
+            .addField("**help", "commandes du bot !")
+            .addField("**faction", "Membre de la fac: kazuto_Himejima Matouspartan thopher59877 Shadowdo Flamo jane Shaddow555")
          message.channel.sendEmbed(help_embed);
          //message.channel.sendMessage("Voici les commandes du bot :\n -/help pour afficher les commandes");
          console.log("Connande help demandée !");
