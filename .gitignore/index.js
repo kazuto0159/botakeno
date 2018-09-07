@@ -29,7 +29,7 @@ bot.on('message', message => {
             .setColor('#06D597')
             .addField("**kazuto", "insta kazuto")
             .setFooter("C'est tout pour le moment !")
-            .addField("**matou* !", "insta matias ")
+            .addField("**matou !", "insta matias ")
             .addField("**soom", "pack de texture de la faction")
             .addField("**help", "commandes du bot !")
             .addField("**faction", "Membre de la fac: kazuto_Himejima Matouspartan thopher59877 Shadowdo Flamo jane Shaddow555")
