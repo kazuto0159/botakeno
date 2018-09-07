@@ -38,7 +38,7 @@ bot.on('message', message => {
          console.log("Connande help demandée !");
     }
 
-    if (message.content === "comment va tu akeno?"){
+    if (message.content === prefix + "akeno?"){
         random();
 
         if (randnum == 3){
