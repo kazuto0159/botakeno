@@ -29,6 +29,10 @@ bot.on('message', message => {
             .setColor('#06D597')
             .addField("commandes du bot !", "**kazuto")
             .setFooter("C'est tout pour le moment !")
+            .addField("commmandes du bot * !", "**matou")
+            .addField("commandes du bot !", "**soom")
+            .addField("commandes du bot !", "**help")
+            .addField("commandes du bot !", "**faction")
          message.channel.sendEmbed(help_embed);
          //message.channel.sendMessage("Voici les commandes du bot :\n -/help pour afficher les commandes");
          console.log("Connande help demandée !");
