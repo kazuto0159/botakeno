@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 var bot = new Discord.Client();
-var prefix = (":");
+var prefix = ("**");
 
 bot.on('ready', () => {
     bot.user.setPresence({game: { name: 'Sucer issey dans les vestiaire', type: 0} });
@@ -9,16 +9,25 @@ bot.on('ready', () => {
 });
 
 bot.on('message', message => {
-    if (message.content === "ping"){
-        message.reply("pong");
-        console.log('ping pong');
+    if (message.content === prefix + "matou"){
+        message.reply("https://www.instagram.com/mathias_mtn/");
+        console.log('insta matou');
+    }
+
+    if (message.content === prefix + "kazuto"){
+        message.reply("https://www.instagram.com/kazouto_yuki/");
+        console.log('insta kazuto');
+    }
+
+    if (message.content === prefix + "soom"){
+        message.reply("https://www.youtube.com/watch?v=TsuTj1VU0Ys");
+        console.log('serveur soom');
     }
 
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
-            .setColor('#D9F200')
-            .addField("commandes du bot !", "  :help : Affiche les commandes du bot ")
-            .addField("Interaction", "ping : Le bot répond pong !")
+            .setColor('#06D597')
+            .addField("commandes du bot !", "**kazuto")
             .setFooter("C'est tout pour le moment !")
          message.channel.sendEmbed(help_embed);
          //message.channel.sendMessage("Voici les commandes du bot :\n -/help pour afficher les commandes");
