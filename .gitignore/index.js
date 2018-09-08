@@ -23,16 +23,43 @@ bot.on('message', message => {
         message.reply("https://www.youtube.com/watch?v=TsuTj1VU0Ys");
         console.log('serveur soom');
     }
+    
+    if (message.content === prefix + "faction"){
+        message.reply("kazuto_Himejima Matouspartan thopher59877 Shadowdo Flamo jane Shaddow555");
+        console.log('faction');
+    }
+
+    if (message.content === prefix + "amv"){
+        message.reply("https://www.youtube.com/watch?v=pSqeI4E7Ygk&list=RDpSqeI4E7Ygk&start_radio=1");
+        console.log('faction');
+    }
+
+    if (message.content === prefix + "dragon"){
+        message.reply("https://youtu.be/13BqLQWqvzg?list=RD13BqLQWqvzg");
+        console.log('faction');
+    }
+
+    if (message.content === prefix + "dragon"){
+        message.reply("https://youtu.be/13BqLQWqvzg?list=RD13BqLQWqvzg");
+        console.log('dragon');
+    }
+
+    if (message.content === prefix + "put") {
+        message.reply("https://i.ebayimg.com/images/g/dfoAAOSwUd9aYcvS/s-l300.jpg");
+        console.log('put');
+    }
+
 
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
-            .setColor('#06D597')
-            .addField("**kazuto", "insta kazuto")
-            .setFooter("C'est tout pour le moment !")
-            .addField("**matou !", "insta matias ")
-            .addField("**soom", "pack de texture de la faction")
-            .addField("**help", "commandes du bot !")
-            .addField("**faction", "Membre de la fac: kazuto_Himejima Matouspartan thopher59877 Shadowdo Flamo jane Shaddow555")
+        .addField("**kazuto", "insta kazuto")
+        .setFooter("C'est tout pour le moment !")
+        .addField("**matou !", "insta matias ")
+        .addField("**soom", "pack de texture de la faction")
+        .addField("**help", "commandes du bot !")
+        .addField("**dragon", "La chanson du dragon nichon")
+        .addField("**amv", "amv DXD")
+        .addField("**faction", "Membre de la fac: kazuto_Himejima Matouspartan thopher59877 Shadowdo Flamo jane Shaddow555")
          message.channel.sendEmbed(help_embed);
          //message.channel.sendMessage("Voici les commandes du bot :\n -/help pour afficher les commandes");
          console.log("Connande help demandée !");
