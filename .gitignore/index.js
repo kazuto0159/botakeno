@@ -53,7 +53,7 @@ bot.on('message', message => {
         .addField("**matou !", "insta matias ")
         .addField("**soom", "pack de texture de la faction")
         .addField("**help", "commandes du bot !")
-        .addField("**dragon", "La chanson du dragon nichon")
+        .addField("**dragon", "La chanson du dragon ")
         .addField("'**live", "live tout les soir")
         .addField("**akeno?", "parler a akeno" )
         .addField("**amv", "amv DXD")
