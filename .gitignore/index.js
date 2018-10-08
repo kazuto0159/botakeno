@@ -24,6 +24,11 @@ bot.on('message', message => {
         console.log('serveur soom');
     }
     
+    if (message.content === prefix + "ping"){
+        message.reply("pong");
+        console.log('ping pong');
+    }
+    
     if (message.content === prefix + "faction"){
         message.reply("kazuto_Himejima Matouspartan thopher59877 Shadowdo Flamo jane Shaddow555");
         console.log('faction');
