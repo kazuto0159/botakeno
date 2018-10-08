@@ -31,13 +31,8 @@ bot.on('message', message => {
 
     if (message.content === prefix + "amv"){
         message.reply("https://www.youtube.com/watch?v=pSqeI4E7Ygk&list=RDpSqeI4E7Ygk&start_radio=1");
-        console.log('faction');
-    }
-
-    if (message.content === prefix + "dragon"){
-        message.reply("https://youtu.be/13BqLQWqvzg?list=RD13BqLQWqvzg");
-        console.log('faction');
-    }
+        console.log('amv');
+   }
 
     if (message.content === prefix + "dragon"){
         message.reply("https://youtu.be/13BqLQWqvzg?list=RD13BqLQWqvzg");
@@ -52,12 +47,15 @@ bot.on('message', message => {
 
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
+        .setColor('#01FRDC')
         .addField("**kazuto", "insta kazuto")
         .setFooter("C'est tout pour le moment !")
         .addField("**matou !", "insta matias ")
         .addField("**soom", "pack de texture de la faction")
         .addField("**help", "commandes du bot !")
         .addField("**dragon", "La chanson du dragon nichon")
+        .addField("'**live", "live tout les soir")
+        .addField("**akeno?", "parler a akeno" )
         .addField("**amv", "amv DXD")
         .addField("**faction", "Membre de la fac: kazuto_Himejima Matouspartan thopher59877 Shadowdo Flamo jane Shaddow555")
          message.channel.sendEmbed(help_embed);
