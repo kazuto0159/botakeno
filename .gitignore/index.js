@@ -19,6 +19,11 @@ bot.on('message', message => {
         console.log('insta kazuto');
     }
 
+        if (message.content === prefix + "youtube"){
+        message.reply("https://www.youtube.com/");
+        console.log('youtube');
+    }
+    
     if (message.content === prefix + "soom"){
         message.reply("https://www.dropbox.com/s/luqihx4hdo26q09/%C2%A78Soom%20texture%20pack%20%20%C2%A74%5BPaladium%5D.zip?dl=0");
         console.log('serveur soom');
