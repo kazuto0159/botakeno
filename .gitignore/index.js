@@ -25,7 +25,7 @@ bot.on('message', message => {
             
     }
 
-        if (message.content === prefix + "charle"){
+        if (message.content === prefix + "charles"){
         message.reply("https://www.youtube.com/watch?v=NvS351QKFV4");
         console.log('youtube');
     }
