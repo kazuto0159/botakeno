@@ -60,7 +60,11 @@ bot.on('message', message => {
         console.log('put');
     }
 
-
+    if (message.content === prefix + "mods"){
+        message.reply("https://www.dropbox.com/s/33tf04whqmhpcjn/MODS.zip?dl=0");
+        console.log('mods');
+    }
+    
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
         .setColor('#01FRDC')
