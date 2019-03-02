@@ -61,7 +61,7 @@ bot.on('message', message => {
     }
 
     if (message.content === prefix + "mods"){
-        message.reply("https://www.dropbox.com/s/33tf04whqmhpcjn/MODS.zip?dl=0");
+        message.reply("mods pack:https://www.dropbox.com/s/33tf04whqmhpcjn/MODS.zip?dl=0");
         console.log('mods');
     }
     
