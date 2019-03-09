@@ -64,6 +64,11 @@ bot.on('message', message => {
         message.reply("https://i.ebayimg.com/images/g/dfoAAOSwUd9aYcvS/s-l300.jpg");
         console.log('put');
     }
+    
+    if (message.content === prefix + "OriKami") {
+        message.reply("https://www.etsy.com/fr/shop/OriKamiFR");
+        console.log('OriKami');
+    }
 
     if (message.content === prefix + "mods"){
         message.reply("mods pack:https://www.dropbox.com/s/33tf04whqmhpcjn/MODS.zip?dl=0");
