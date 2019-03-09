@@ -86,7 +86,7 @@ bot.on('message', message => {
     if (message.content === prefix + "akeno?"){
         random();
 
-        if (randnum == 3){
+        if (randnum == 0){
             message.reply("je t aime");
             console-log(randnum);
         }
@@ -96,12 +96,12 @@ bot.on('message', message => {
             console.log(randnum);
         }
 
-        if (randnum == 4){
+        if (randnum == 2){
             message.reply("hella hella hella issey ma fais un bisou");
             console.log(randnum);
         }
 
-        if (randnum == 2){
+        if (randnum == 3){
             message.reply("issey me boude -_-");
             console.log(randnum);
         }
@@ -112,7 +112,7 @@ bot.on('message', message => {
 
 function random(min, max) {
     min = Math.ceil(0);
-    max = Math.floor(4);
+    max = Math.floor(3);
     randnum = Math.floor(Math.random() * (max - min +1) + min);
 };
 
