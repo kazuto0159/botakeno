@@ -88,7 +88,7 @@ bot.on('message', message => {
 
         if (randnum == 0){
             message.reply("je t aime");
-            console-log(randnum);
+            console.log(randnum);
         }
     
         if (randnum == 1){
