@@ -19,13 +19,13 @@ bot.on('message', message => {
         console.log('insta kazuto');
     }
 
-        if (message.content === prefix + "youtube"){
+    if (message.content === prefix + "youtube"){
         message.reply("https://www.youtube.com/");
         console.log('youtube');
             
     }
 
-        if (message.content === prefix + "charles"){
+    if (message.content === prefix + "charles"){
         message.reply("https://www.youtube.com/watch?v=NvS351QKFV4");
         console.log('youtube');
     }
@@ -44,11 +44,16 @@ bot.on('message', message => {
         message.reply("kazuto_Himejima Matouspartan thopher59877 Shadowdo Flamo jane Shaddow555");
         console.log('faction');
     }
+    
+    if (message.content === prefix + "tes ou"){
+        message.reply("pas la ");
+        console.log('tesOuPasLa');
+    }
 
     if (message.content === prefix + "amv"){
         message.reply("https://www.youtube.com/watch?v=pSqeI4E7Ygk&list=RDpSqeI4E7Ygk&start_radio=1");
         console.log('amv');
-   }
+    }
 
     if (message.content === prefix + "dragon"){
         message.reply("https://youtu.be/13BqLQWqvzg?list=RD13BqLQWqvzg");
