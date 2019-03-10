@@ -9,6 +9,7 @@ bot.on('ready', () => {
 });
 
 bot.on('message', message => {
+    
     if (message.content === prefix + "matou"){
         message.reply("https://www.instagram.com/mathias_mtn/");
         console.log('insta matou');
@@ -75,15 +76,21 @@ bot.on('message', message => {
         console.log('mods');
     }
     
+    if (message.content === prefix + "kuikuisan"){
+        message.reply("https://www.instagram.com/nord024.concours");
+        console.log('insta kuikuisan');
+    }
+    
     if (message.content === prefix + "help"){
         var help_embed = new Discord.RichEmbed()
         .setColor('#01FRDC')
-        .addField("**kazuto", "insta kazuto")
-        .setFooter("C'est tout pour le moment !")
-        .addField("**matou !", "insta matias ")
-        .addField("**soom", "pack de texture de la faction")
         .addField("**help", "commandes du bot !")
-        .addField("**dragon", "La chanson du dragon ")
+        .addField("**kazuto", "insta kazuto")
+        .addField("**matou !", "insta matias")
+        .addField("**kuikuisan","insta kuikuisan")
+        .addField("**OriKami", "Soutenir KuiKuisan")
+        .addField("**soom", "pack de texture de la faction")
+        .addField("**dragon", "La chanson du dragon")
         .addField("'**live", "live tout les soir")
         .addField("**akeno?", "parler a akeno" )
         .addField("**amv", "amv DXD")
