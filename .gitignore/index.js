@@ -9,55 +9,55 @@ bot.on('ready', () => {
 });
 
 bot.on('message',message =>{
-        if(message.content ==='ping'){
+        if(message.content ===prefix+'ping'){
             message.reply('pong !');
             console.log('ping pong!');
         }
-        if(message.content === prefix + "kazuto"){
+        if(message.content ===prefix+"kazuto"){
             message.reply('https://www.instagram.com/kazouto_yuki');
             console.log('instagram of kazuto');
         }
-        if(message.content ==='matou'){
+        if(message.content ===prefix+'matou'){
             message.reply('https://www.instagram.com/mathias_mtn');
             console.log('instagram of matou');
         }
-        if(message.content ==='kuikuisan'){
+        if(message.content ===prefix+'kuikuisan'){
             message.reply('https://www.instagram.com/nord024.concours');
             console.log('instagram of kuikuisan');
         }
-        if(message.content ==='charles'){
+        if(message.content ===prefix+'charles'){
             message.reply('https://www.youtube.com/watch?v=NvS351QKFV4');
             console.log('youtube of charles');
         }
-        if(message.content ==='soom'){
+        if(message.content ===prefix+'soom'){
             message.reply('texture pack de soom : https://urlz.fr/9c30');
             console.log('texture pack of soom');
         }
-        if(message.content ==='put'){
+        if(message.content ===prefix+'put'){
             message.reply('https://i.ebayimg.com/images/g/dfoAAOSwUd9aYcvS/s-l300.jpg');
             console.log('catin ebay ze');
         }
-        if(message.content ==='dragon'){
+        if(message.content ===prefix+'dragon'){
             message.reply('https://youtu.be/13BqLQWqvzg');
             console.log('link of the song dragon on youtube');
         }
-        if(message.content ==='amv'){
+        if(message.content ===prefix+'amv'){
             message.reply('https://www.youtube.com/watch?v=pSqeI4E7Ygk');
             console.log('link of amw on youtube');
         }
-        if(message.content ==='youtube'){
+        if(message.content ===prefix+'youtube'){
             message.reply('www.youtube.com');
             console.log('link of youtube');
         }
-        if(message.content ==='faction'){
+        if(message.content ===prefix+'faction'){
             message.reply('kazuto_Himejima , Matouspartan ,thopher59877 ,Shadowdo ,Flamo ,jane et Shaddow555');
             console.log('menber of faction');
         }
-        if(message.content ==='orikami'){
+        if(message.content ===prefix+'orikami'){
             message.reply('https://www.etsy.com/fr/shop/OriKamiFR');
             console.log('orikami of kuikuisan on etsy ');
         }
-        if(message.content ==='help'){
+        if(message.content ===prefix+'help'){
             var help_embed = new Discord.RichEmbed()
             .setColor('#01FRDC')
             .addField("**help", "commandes du bot !")
@@ -75,7 +75,7 @@ bot.on('message',message =>{
          //message.channel.sendMessage("Voici les commandes du bot :\n -/help pour afficher les commandes");
             console.log('need help');
         }
-        if(message.content ==='akeno?'){
+        if(message.content ===prefix+'akeno?'){
             random();
             if (randnum == 0){
                 message.reply("je t aime");
