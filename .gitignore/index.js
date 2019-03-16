@@ -108,6 +108,11 @@ bot.on('guildMemberAdd',member =>{
         return console.log("new member");
         }).catch(console.error)
 });
+bot.on('guildMemberRemove',member =>{
+    member.createDM().then(channel =>{
+        return console.log("member leave");
+        }).catch(console.error)
+});
 
 
 
