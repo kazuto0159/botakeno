@@ -9,7 +9,7 @@ bot.on('ready', () => {
 });
 
 bot.on('message',(receivedMessage) => {
-    if(receivedMessage.author == bot.user){
+    if(receivedMessage.author == client.user){
         return
     }
     receivedMessage.react("👍")
