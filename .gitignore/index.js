@@ -8,18 +8,15 @@ bot.on('ready', () => {
     console.log("bot ready ! ");
 });
 
-bot.on('message',(receivedMessage) => {
-    if(receivedMessage.author == client.user){
-        return
-    }
-    receivedMessage.react("👍")
-    )};
+
     
 bot.on('message', message => {
     
     if (message.content === prefix + "matou"){
         message.reply("https://www.instagram.com/mathias_mtn/");
         console.log('insta matou');
+        receivedMessage.react("👍")
+
     }
 
     if (message.content === prefix + "kazuto"){
