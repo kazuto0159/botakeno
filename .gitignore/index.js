@@ -8,7 +8,10 @@ bot.on('ready', () => {
     console.log("bot ready ! ");
 });
 
-
+bot.on('message',(receivedMessage) => {
+    receivedMessage.react("👍")
+    )}
+    
 bot.on('message', message => {
     
     if (message.content === prefix + "matou"){
