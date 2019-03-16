@@ -13,7 +13,7 @@ bot.on('message',(receivedMessage) => {
         return
     }
     receivedMessage.react("👍")
-    )}
+    )};
     
 bot.on('message', message => {
     
