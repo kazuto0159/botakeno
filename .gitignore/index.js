@@ -101,8 +101,7 @@ bot.on('message',message =>{
 bot.on('guildMemberAdd',member =>{
     member.createDM().then(channel =>{
         return channel.send('Bienvenue Sur Mon serveur '+ member.displayName);
-        return console.log("new member");
-    }).catch(console.error)
+        }).catch(console.error)
 });
 
 
