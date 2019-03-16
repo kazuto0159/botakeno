@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 const bot = new Discord.Client();
-const PREFIX = ("**");
+const prefix = ("");
 
 bot.on('ready', () => {
     bot.user.setPresence({game: { name: 'Sucer issey dans les vestiaire', type: 0} });
