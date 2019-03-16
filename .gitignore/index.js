@@ -9,6 +9,9 @@ bot.on('ready', () => {
 });
 
 bot.on('message',(receivedMessage) => {
+    if(receivedMessage.author == bot.user){
+        return
+    }
     receivedMessage.react("👍")
     )}
     
