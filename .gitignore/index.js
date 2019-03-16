@@ -113,7 +113,9 @@ bot.on('guildMemberRemove',member =>{
         return console.log("member leave "+member.displayName);
         }).catch(console.error)
 });
-
+bot.on('guildMemberAdd',member =>{
+    bot.channels.get('484747799737532446').send('Bienvenue sur soom,'+member.display);
+});
 
 
 
