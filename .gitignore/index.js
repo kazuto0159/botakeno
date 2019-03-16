@@ -14,7 +14,7 @@ bot.on('message',message =>{
             message.reply('pong !');
             console.log('ping pong!');
         }
-        if(message.content === prefix + 'kazuto'){
+        if(message.content === prefix + "kazuto"){
             message.reply('https://www.instagram.com/kazouto_yuki');
             console.log('instagram of kazuto');
         }
