@@ -9,7 +9,7 @@ bot.on('ready', () => {
 });
 
 bot.on('message',message =>{
-    if(message.content[0] === PREFIX){
+    if(message.content=== PREFIX){
         if(message.content ==='ping'){
             message.reply('pong !');
             console.log('ping pong!');
