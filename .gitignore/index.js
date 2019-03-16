@@ -15,7 +15,6 @@ bot.on('message', message => {
     if (message.content === prefix + "matou"){
         message.reply("https://www.instagram.com/mathias_mtn/");
         console.log('insta matou');
-        receivedMessage.react("👍")
 
     }
 
