@@ -100,37 +100,27 @@ bot.on('message',message =>{
 
 bot.on('guildMemberAdd',member =>{
     member.createDM().then(channel =>{
-     bot.channels.get('484747799737532446').send('◢◤━━━━━━━━━━━━━━◤◢★◣◥━━━━━━━━━━━━━━◥◣');
+     bot.channels.get('484747799737532446').send('◢◤━━━━━◤◢★◣◥━━━━━◥◣');
      bot.channels.get('484747799737532446').send('βienvenue sur le discørde de la Soom!');
-     bot.channels.get('484747799737532446').send('◥◣━━━━━━━━━━━━━━◣◥★◤◢━━━━━━━━━━━━━━◢◤');
+     bot.channels.get('484747799737532446').send('◥◣━━━━━◣◥★◤◢━━━━━◢◤ ');
+        console.log("new member "+member.displayName);
         return channel.send('Bienvenue Sur Mon serveur '+ member.displayName);
-         return console.log("new member "+member.displayName);
+         
         }).catch(console.error)
 });
 bot.on('guildMemberAdd',member =>{
     member.createDM().then(channel =>{
-        return console.log("new member "+member.displayName);
+        return console.log("new member "+member.display);
         }).catch(console.error)
 });
 bot.on('guildMemberRemove',member =>{
     member.createDM().then(channel =>{
-     bot.channels.get('484747799737532446').send('◢◤━━━━━━━━━━━━━━◤◢★◣◥━━━━━━━━━━━━━━◥◣');
+     bot.channels.get('484747799737532446').send('◢◤━━━━━◤◢★◣◥━━━━━◥◣');
      bot.channels.get('484747799737532446').send("Ĥeureux d'avøir fait ta cønnaissance ");
-     bot.channels.get('484747799737532446').send('◥◣━━━━━━━━━━━━━━◣◥★◤◢━━━━━━━━━━━━━━◢◤');
+     bot.channels.get('484747799737532446').send('◥◣━━━━━◣◥★◤◢━━━━━◢◤ ');
 
         return console.log("member leave "+member.displayName);
         }).catch(console.error)
-});
-bot.on('guildMemberAdd',member =>{
-     bot.channels.get('484747799737532446').send('◢◤━━━━━━━━━━━━━━◤◢★◣◥━━━━━━━━━━━━━━◥◣');
-     bot.channels.get('484747799737532446').send('βienvenue sur le discørde de la Soom!');
-     bot.channels.get('484747799737532446').send('◥◣━━━━━━━━━━━━━━◣◥★◤◢━━━━━━━━━━━━━━◢◤');
-});
-bot.on('guildMemberRemove',member =>{
-     bot.channels.get('484747799737532446').send('◢◤━━━━━━━━━━━━━━◤◢★◣◥━━━━━━━━━━━━━━◥◣');
-     bot.channels.get('484747799737532446').send("Ĥeureux d'avøir fait ta cønnaissance ");
-     bot.channels.get('484747799737532446').send('◥◣━━━━━━━━━━━━━━◣◥★◤◢━━━━━━━━━━━━━━◢◤');
-
 });
 
 
