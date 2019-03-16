@@ -8,10 +8,7 @@ bot.on('ready', () => {
     console.log("bot ready ! ");
 });
 
-clientDiscord.on('messageReactionadd',(reaction,user) =>{
-    if(reaction.emoji.name === ":tada:")
-        clientDiscord.channels.get("486700769320370177").send(':tada: :tada :tada');
-})
+
 
 
 
@@ -133,6 +130,10 @@ bot.on('message', message => {
         }
 
     }    
+    clientDiscord.on('messageReactionadd',(reaction,user) =>{
+    if(reaction.emoji.name === ":tada:")
+        clientDiscord.channels.get("486700769320370177").send(':tada: :tada :tada');
+})
 
 });
 
