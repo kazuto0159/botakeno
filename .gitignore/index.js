@@ -8,6 +8,20 @@ bot.on('ready', () => {
     console.log("bot ready ! ");
 });
 
+//previent le bot de ne pas répondre a ces propres message
+bot.on('message',(receivedMessage) => {
+ if (receivedMessage.author == client.user){
+     return
+}
+receivedMessage.react("👍")//reagis au message reçu 
+receivedMessage.react("🛐")
+
+receivedMessage.guild.emojis.forEach(customEmoji => {//récupere les custom émoji
+    console.log('reagis avec un custom emoji : ${customEmoji.name} (${customEmoji.id})')
+    receivedMessage.react(customEmoji)
+    })
+})
+
 bot.on('message', message => {
     
     if (message.content === prefix + "matou"){
