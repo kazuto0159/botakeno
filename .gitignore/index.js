@@ -41,7 +41,7 @@ bot.on('message',message =>{
             message.reply('https://youtu.be/13BqLQWqvzg');
             console.log('link of the song dragon on youtube');
         }
-        if(message.content ===prefix+'amv'){
+        if(message.content ===prefix+'amw'){
             message.reply('https://www.youtube.com/watch?v=pSqeI4E7Ygk');
             console.log('link of amw on youtube');
         }
@@ -65,11 +65,10 @@ bot.on('message',message =>{
             .addField("**matou !", "insta matias")
             .addField("**kuikuisan","insta kuikuisan")
             .addField("**OriKami", "Soutenir KuiKuisan")
-            .addField("**soom", "pack de texture de la faction")
-            .addField("**dragon", "La chanson du dragon")
-            .addField("'**live", "live tout les soir")
-            .addField("**akeno?", "parler a akeno" )
             .addField("**amv", "amv DXD")
+            .addField("**dragon", "La chanson du dragon")
+            .addField("**akeno?", "parler a akeno" )
+            .addField("**soom", "pack de texture de la faction")
             .addField("**faction", "Membre de la fac: kazuto_Himejima Matouspartan thopher59877 Shadowdo Flamo jane Shaddow555")
             message.channel.sendEmbed(help_embed);
          //message.channel.sendMessage("Voici les commandes du bot :\n -/help pour afficher les commandes");
