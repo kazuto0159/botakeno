@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 const bot = new Discord.Client();
-const PREFIX = ("**");
+const PREFIX = ("");
 
 bot.on('ready', () => {
     bot.user.setPresence({game: { name: 'Sucer issey dans les vestiaire', type: 0} });
@@ -14,7 +14,7 @@ bot.on('message',message =>{
             message.reply('pong !');
             console.log('ping pong!');
         }
-        if(message.content ==='kazuto'){
+        if(message.content === prefix + 'kazuto'){
             message.reply('https://www.instagram.com/kazouto_yuki');
             console.log('instagram of kazuto');
         }
