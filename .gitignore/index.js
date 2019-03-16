@@ -121,7 +121,7 @@ bot.on('message', message => {
 
         if (randnum == 3){
             message.reply("issey me boude -_-");
-            console.log("akeno"randnum);
+            console.log("akeno",randnum);
         }
 
     }    
