@@ -69,6 +69,7 @@ bot.on('message', message => {
     
     if (message.content === prefix + "OriKami") {
         message.reply("https://www.etsy.com/fr/shop/OriKamiFR");
+        receivedMessage.react("👍")
         console.log('OriKami');
     }
 
