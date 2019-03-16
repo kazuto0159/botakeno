@@ -114,8 +114,14 @@ bot.on('guildMemberRemove',member =>{
         }).catch(console.error)
 });
 bot.on('guildMemberAdd',member =>{
-    bot.channels.get('484747799737532446').send('Bienvenue sur soom,'+member.display);
+    bot.channels.get('484747799737532446').send('Bienvenue sur soom,'+member.displayName);
+     bot.channels.get('484747799737532446').send('Bienvenue sur soom,'+member.displayName);
+     bot.channels.get('484747799737532446').send('Bienvenue sur soom,'+member.displayName);
 });
+bot.on('guildMemberRemove',member =>{
+    bot.channels.get('484747799737532446').send('Aurevoir,'+member.displayName);
+});
+
 
 
 
