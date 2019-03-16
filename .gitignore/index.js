@@ -106,22 +106,22 @@ bot.on('message', message => {
 
         if (randnum == 0){
             message.reply("je t aime");
-            console.log(randnum);
+            console.log("akeno 0");
         }
     
         if (randnum == 1){
             message.reply("rias a voler mai nouveau sous vetement");
-            console.log(randnum);
+            console.log("akeno 1");
         }
 
         if (randnum == 2){
             message.reply("hella hella hella issey ma fais un bisou");
-            console.log(randnum);
+            console.log("akeno 2");
         }
 
         if (randnum == 3){
             message.reply("issey me boude -_-");
-            console.log("akeno",randnum);
+            console.log("akeno 3");
         }
 
     }    
