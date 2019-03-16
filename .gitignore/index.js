@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 const bot = new Discord.Client();
-const PREFIX = ("");
+const PREFIX = ("**");
 
 bot.on('ready', () => {
     bot.user.setPresence({game: { name: 'Sucer issey dans les vestiaire', type: 0} });
@@ -9,7 +9,7 @@ bot.on('ready', () => {
 });
 
 bot.on('message',message =>{
-    if(message.content=== PREFIX){
+    if(message.content[0]=== PREFIX){
         if(message.content ==='ping'){
             message.reply('pong !');
             console.log('ping pong!');
