@@ -100,6 +100,7 @@ bot.on('message',message =>{
 
 bot.on('guildMemberAdd',member =>{
     member.createDM().then(channel =>{
+     delay(2000);
      bot.channels.get('484747799737532446').send('◢◤━━━━━◤◢★◣◥━━━━━◥◣');
      bot.channels.get('484747799737532446').send('**βienvenue sur le discørde de la Soom!**');
      bot.channels.get('484747799737532446').send('◥◣━━━━━◣◥★◤◢━━━━━◢◤ ');
@@ -111,6 +112,7 @@ bot.on('guildMemberAdd',member =>{
 
 bot.on('guildMemberRemove',member =>{
     member.createDM().then(channel =>{
+     delay(2000);
      bot.channels.get('484747799737532446').send('◢◤━━━━━◤◢★◣◥━━━━━◥◣');
      bot.channels.get('484747799737532446').send("**Ĥeureux d'avøir fait ta cønnaissance**");
      bot.channels.get('484747799737532446').send('◥◣━━━━━◣◥★◤◢━━━━━◢◤ ');
