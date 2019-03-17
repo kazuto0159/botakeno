@@ -102,7 +102,9 @@ bot.on('guildMemberAdd',member =>{
     member.createDM().then(channel =>{
      bot.channels.get('484747799737532446').send('◢◤━━━━━◤◢★◣◥━━━━━◥◣');
      bot.channels.get('484747799737532446').send('**βienvenue sur le discørde de la Soom!**');
+     bot.channels.get('484747799737532446').send(member.displayName);
      bot.channels.get('484747799737532446').send('◥◣━━━━━◣◥★◤◢━━━━━◢◤ ');
+     
      console.log("new member was join,"+member.displayName);
         return channel.send('Bienvenue Sur Mon serveur,'+ member.displayName);
          
@@ -113,9 +115,10 @@ bot.on('guildMemberRemove',member =>{
     member.createDM().then(channel =>{
      bot.channels.get('484747799737532446').send('◢◤━━━━━◤◢★◣◥━━━━━◥◣');
      bot.channels.get('484747799737532446').send("**Ĥeureux d'avøir fait ta cønnaissance**");
+     bot.channels.get('484747799737532446').send(member.displayName);
      bot.channels.get('484747799737532446').send('◥◣━━━━━◣◥★◤◢━━━━━◢◤ ');
      console.log("old member was leave, "+member.displayName);
-       return channel.send('Aurevoir,'+ member.displayName);
+     
        
     }).catch(console.error)
 });
