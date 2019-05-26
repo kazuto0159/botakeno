@@ -98,7 +98,7 @@ bot.on('message',message =>{
             }   
             if (randnum == 4){
                 message.reply("je suce insane a temps plein");
-                console.log("akeno 3");
+                console.log("akeno 4");
             }
             
         }
@@ -136,7 +136,7 @@ bot.on('guildMemberRemove',member =>{
 
 function random(min, max) {
     min = Math.ceil(0);
-    max = Math.floor(3);
+    max = Math.floor(4);
     randnum = Math.floor(Math.random() * (max - min +1) + min);
 };
 
