@@ -65,7 +65,7 @@ bot.on('message',message =>{
             message.reply('je te prend dans les toilette');
             console.log('j aime sa ');
         }
-        if(message.content ===prefix+'akeno suce moi '){
+        if(message.content ===prefix+'akeno suce moi'){
             message.reply('avec du gravier ?');
             console.log('j aime sa ');
         }
