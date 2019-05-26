@@ -57,6 +57,10 @@ bot.on('message',message =>{
             message.reply('https://www.etsy.com/fr/shop/OriKamiFR');
             console.log('orikami of kuikuisan on etsy ');
         }
+        if(message.content ===prefix+'nique ta rase akeno'){
+            message.reply('Hooo oui j aime sa');
+            console.log('j aime sa ');
+        }
         if(message.content ===prefix+'help'){
             var help_embed = new Discord.RichEmbed()
             .setColor('#01FRDC')
@@ -92,7 +96,10 @@ bot.on('message',message =>{
                 message.reply("issey me boude -_-");
                 console.log("akeno 3");
             }   
-            
+            if (randnum == 4){
+                message.reply("je suce insane a temps plein");
+                console.log("akeno 3");
+            }
             
         }
 
