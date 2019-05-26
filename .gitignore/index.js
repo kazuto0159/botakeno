@@ -61,6 +61,14 @@ bot.on('message',message =>{
             message.reply('Hooo oui j aime sa');
             console.log('j aime sa ');
         }
+        if(message.content ===prefix+'tfk'){
+            message.reply('je te prend dans les toilette');
+            console.log('j aime sa ');
+        }
+        if(message.content ===prefix+'akeno suce moi '){
+            message.reply('avec du gravier ?');
+            console.log('j aime sa ');
+        }
         if(message.content ===prefix+'help'){
             var help_embed = new Discord.RichEmbed()
             .setColor('#01FRDC')
@@ -81,7 +89,7 @@ bot.on('message',message =>{
         if(message.content ===prefix+'akeno?'){
             random();
             if (randnum == 0){
-                message.reply("je t aime");
+                message.reply("j aime quand tu me prend dans les toilette");
                 console.log("akeno 0");
             }
             if (randnum == 1){
@@ -96,10 +104,6 @@ bot.on('message',message =>{
                 message.reply("issey me boude -_-");
                 console.log("akeno 3");
             }   
-            if (randnum == 4){
-                message.reply("je suce insane a temps plein");
-                console.log("akeno 4");
-            }
             
         }
 
@@ -136,7 +140,7 @@ bot.on('guildMemberRemove',member =>{
 
 function random(min, max) {
     min = Math.ceil(0);
-    max = Math.floor(4);
+    max = Math.floor(3);
     randnum = Math.floor(Math.random() * (max - min +1) + min);
 };
 
