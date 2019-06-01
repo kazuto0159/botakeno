@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 const bot = new Discord.Client();
-const prefix = ("");
+const prefix = ("=");
 
 bot.on('ready', () => {
     bot.user.setPresence({game: { name: 'Sucer issey dans les vestiaire', type: 0} });
@@ -9,8 +9,8 @@ bot.on('ready', () => {
 });
 
 bot.on('message',message =>{
-        if(message.content ===prefix+'ping'){
-            message.reply('pong !');
+        if(message.content ===prefix+'=Shalltear'){
+            message.reply('--akeno');
             console.log('ping pong!');
         }
         if(message.content ===prefix+"kazuto"){
