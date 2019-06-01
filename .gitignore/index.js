@@ -9,8 +9,8 @@ bot.on('ready', () => {
 });
 
 bot.on('message',message =>{
-        if(message.content ===prefix+'--Shalltear'){
-            message.reply('--akeno');
+        if(message.content ===prefix+'ping'){
+            message.reply('pong');
             console.log('ping pong!');
         }
         if(message.content ===prefix+"kazuto"){
