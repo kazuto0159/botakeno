@@ -9,7 +9,7 @@ bot.on('ready', () => {
 });
 
 bot.on('message',message =>{
-        if(message.content ===prefix+'=Shalltear'){
+        if(message.content ===prefix+'--Shalltear'){
             message.reply('--akeno');
             console.log('ping pong!');
         }
